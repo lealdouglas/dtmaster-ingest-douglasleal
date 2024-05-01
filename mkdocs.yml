@@ -1,0 +1,63 @@
+site_name: DTMASTER-INGEST-DOUGLASLEAL
+repo_url: https://github.com/lealdouglas/dtmaster-ingest-douglasleal
+repo_name: lealdouglas/dtmaster-ingest-douglasleal
+edit_uri: tree/main/docs
+
+theme:
+  name: readthedocs
+  logo: assets/sabre.png
+  favicon: assets/sabre.png
+
+markdown_extensions:
+  - attr_list
+
+extra_css:
+  - stylesheets/extra.css
+  
+  # - admonition
+  # - pymdownx.tasklist
+  # - pymdownx.superfences:
+  #     custom_fences:
+  #       - name: mermaid
+  #         class: mermaid
+  #         format: !!python/name:pymdownx.superfences.fence_code_format
+  # - pymdownx.emoji:
+  #     emoji_index: !!python/name:materialx.emoji.twemoji
+  #     emoji_generator: !!python/name:materialx.emoji.to_svg
+
+
+# theme:
+#   name: material
+#   language: pt-BR
+#   logo: assets/logo.png
+#   favicon: assets/logo.png
+
+# markdown_extensions:
+#   - attr_list
+#   - admonition
+#   - pymdownx.tasklist
+#   - pymdownx.superfences:
+#       custom_fences:
+#         - name: mermaid
+#           class: mermaid
+#           format: !!python/name:pymdownx.superfences.fence_code_format
+#   - pymdownx.emoji:
+#       emoji_index: !!python/name:materialx.emoji.twemoji
+#       emoji_generator: !!python/name:materialx.emoji.to_svg
+
+# extra_css:
+#   - stylesheets/extra.css
+
+# watch:
+#    - notas_musicais
+
+# plugins:
+# - macros
+# - mkdocstrings:
+#     handlers:
+#       python:
+#         paths: [notas_musicais]
+
+# extra:
+#   commands:
+#     run: notas-musicais
