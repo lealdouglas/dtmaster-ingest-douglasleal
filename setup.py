@@ -6,6 +6,8 @@ setup(
     author="Douglas Leal",
     author_email="douglas.sleal@outlook.com",
     description="An application test for ingest",
+    long_description=open("README.md").read(),
+    long_description_content_type="text/markdown",
     packages=find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
