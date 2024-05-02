@@ -13,7 +13,13 @@ markdown_extensions:
 
 extra_css:
   - stylesheets/extra.css
-  
+
+plugins:
+- mkdocstrings:
+    handlers:
+      python:
+        paths: [dtmaster_ingest_douglasleal]
+
   # - admonition
   # - pymdownx.tasklist
   # - pymdownx.superfences:
