@@ -11,10 +11,16 @@ def input(path: str) -> DataFrame:
     Returns:
         Um dataframe com metadados do arquivo consumido.
 
+    Raises:
+        ValueError: Caso path esteja vazio.
+
     Examples:
         >>> input('path/origem/account.csv')
         DataFrame[age: bigint, name: string]
     """
+
+    if path == '':
+        raise ValueError(f'path is required')
 
     spark = SparkSession.builder.appName(
         'Testing PySpark Example'
