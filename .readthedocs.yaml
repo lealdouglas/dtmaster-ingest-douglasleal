@@ -9,15 +9,10 @@ build:
     python: '3.11'
 
   jobs:
-    pre_create_environment:
+    post_create_environment:
       - pip install poetry
       - poetry lock --no-update
-      - poetry install --only doc
-      # - poetry config virtualenvs.create false
+      - poetry config virtualenvs.create false
 
-    # pre_create_environment:
-    #   - poetry install --only doc
-# Config validation error in build.jobs. Expected one of (
-# pre_checkout, post_checkout, pre_system_dependencies, post_system_dependencies, pre_create_environment,
-# post_create_environment, pre_install, post_install, pre_build, post_build), got type str (steps).
-# Double check the type of the value. A string may be required (e.g. "3.10" instead of 3.10)
+    post_install:
+      - VIRTUAL_ENV=$READTHEDOCS_VIRTUALENV_PATH poetry install --with doc
