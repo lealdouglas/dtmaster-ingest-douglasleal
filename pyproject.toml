@@ -26,7 +26,7 @@ taskipy = "^1.10.3"
 pyspark = "^3.5.1"
 
 [tool.poetry.group.doc.dependencies]
-mkdocs-material = "^9.5.20"
+mkdocs-material = "^8.2.8"
 mkdocstrings = "^0.25.0"
 mkdocstrings-python = "^1.10.0"
 mkdocs-macros-plugin = "^1.0.5"
