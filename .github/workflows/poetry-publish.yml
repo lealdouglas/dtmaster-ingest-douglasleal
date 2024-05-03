@@ -20,9 +20,9 @@ jobs:
       - name: Setup a local virtual environment
         run: |
           poetry config virtualenvs.create false
-      - name: Install the project dependencies
-        run: poetry install
       - name: poetry lock --no-update
         run: poetry lock --no-update
+      - name: Install the project dependencies
+        run: poetry install
       - name: publish
         run: poetry publish -u __token__ -p ${{ secrets.DTMASTER_INGEST }}
