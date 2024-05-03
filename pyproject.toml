@@ -6,12 +6,16 @@ authors = ["Leal <douglas.sleal@outlook.com>"]
 readme = "README.md"
 packages = [{include = "dtmaster_ingest_douglasleal"}]
 classifiers = [
-    "Topic :: Education",
-    "Environment :: Console",
+    "Topic :: Scientific/Engineering",
     "Natural Language :: Portuguese (Brazilian)",
     "Development Status :: 5 - Production/Stable",
     "Programming Language :: Python :: 3.10",
 ]
+
+[tool.poetry.urls]
+"Documentação" = "https://dtmaster-ingest-douglasleal.readthedocs.io/en/latest/"
+"Código" = "https://github.com/lealdouglas/dtmaster-ingest-douglasleal"
+"Bug Tracker" = "https://github.com/lealdouglas/dtmaster-ingest-douglasleal/issues"
 
 [tool.poetry.dependencies]
 python = "^3.10"
