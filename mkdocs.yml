@@ -15,7 +15,6 @@ extra_css:
   - stylesheets/extra.css
 
 plugins:
-  - macros
   - mkdocstrings:
       handlers:
         python:
@@ -50,12 +49,9 @@ plugins:
 #       emoji_index: !!python/name:materialx.emoji.twemoji
 #       emoji_generator: !!python/name:materialx.emoji.to_svg
 
-# extra_css:
-#   - stylesheets/extra.css
-
 # watch:
 #    - notas_musicais
 
-# extra:
-#   commands:
-#     run: notas-musicais
+extra:
+  commands:
+    run: notas-musicais
