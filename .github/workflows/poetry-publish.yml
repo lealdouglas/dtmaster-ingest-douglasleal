@@ -16,10 +16,12 @@ jobs:
         uses: abatilo/actions-poetry@v2
       - name: Setup a local virtual environment
         run: |
+          pip install poetry
+          poetry lock --no-update
           poetry config virtualenvs.create false
-      - name: poetry lock --no-update
-        run: poetry lock --no-update
+
       - name: Install the project dependencies
         run: poetry install
-      - name: publish
+
+      - name: publish python package
         run: poetry publish -u __token__ -p ${{ secrets.DTMASTER_INGEST }}
