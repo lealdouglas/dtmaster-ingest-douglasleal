@@ -9,11 +9,12 @@ build:
     python: '3.11'
 
   jobs:
-    post_create_environment:
+    pre_create_environment:
       - pip install poetry
       - poetry lock --no-update
       - poetry install --only doc
-      - poetry config virtualenvs.create false
+      - poetry install mkdocstrings
+      # - poetry config virtualenvs.create false
 
     # pre_create_environment:
     #   - poetry install --only doc
