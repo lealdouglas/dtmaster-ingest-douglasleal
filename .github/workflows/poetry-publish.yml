@@ -3,9 +3,6 @@ name: Upload Python Package
 on:
   workflow_call:
 
-permissions:
-  contents: read
-
 jobs:
   ci:
     runs-on: ubuntu-latest
