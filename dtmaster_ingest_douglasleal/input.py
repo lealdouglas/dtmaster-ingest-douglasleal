@@ -30,6 +30,8 @@ def input(path: str) -> DataFrame:
         {'name': 'Alice   G.', 'age': 25},
     ]
 
+    print('Hello World')
+
     df = spark.createDataFrame(sample_data)
 
     return df
