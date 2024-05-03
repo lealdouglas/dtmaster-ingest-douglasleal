@@ -18,3 +18,4 @@ build:
       - pip install poetry
     post_install:
       - poetry install --only doc
+      - poetry run mkdocs build
