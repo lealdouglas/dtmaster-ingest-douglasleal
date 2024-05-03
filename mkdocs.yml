@@ -15,8 +15,7 @@ extra_css:
   - stylesheets/extra.css
 
 plugins:
-- search
-- mkdocstrings:
-    handlers:
-      python:
-        paths: [dtmaster_ingest_douglasleal]
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: [dtmaster_ingest_douglasleal]
