@@ -17,5 +17,6 @@ build:
     post_create_environment:
       - pip install poetry
     post_install:
+      - poetry lock --no-update
       - poetry install --only doc
       - poetry run mkdocs build
