@@ -13,7 +13,6 @@ build:
       - pip install poetry
       - poetry lock --no-update
       - poetry install --only doc
-      - poetry install mkdocstrings
       # - poetry config virtualenvs.create false
 
     # pre_create_environment:
