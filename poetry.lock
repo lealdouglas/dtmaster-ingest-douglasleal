@@ -637,7 +637,6 @@ Markdown = ">=3.3"
 MarkupSafe = ">=1.1"
 mkdocs = ">=1.4"
 mkdocs-autorefs = ">=0.3.1"
-mkdocstrings-python = {version = ">=0.5.2", optional = true, markers = "extra == \"python\""}
 platformdirs = ">=2.2.0"
 pymdown-extensions = ">=6.3"
 
@@ -1211,4 +1210,4 @@ watchmedo = ["PyYAML (>=3.10)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "26dc17ee2bf7a09d8eafe7e27d163cf4bd30d6ad2860939af1cc8b9c54d30de0"
+content-hash = "cc0fccb20fe3f565c1f6f9b21c7f562d97f566d5e61c2835f9de250787bd4055"
