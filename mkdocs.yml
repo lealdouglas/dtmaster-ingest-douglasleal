@@ -15,23 +15,22 @@ extra_css:
   - stylesheets/extra.css
 
 plugins:
-- mkdocstrings:
-    handlers:
-      python:
-        paths: [dtmaster_ingest_douglasleal]
+  - macros
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: [dtmaster_ingest_douglasleal]
 
-  # - admonition
-  # - pymdownx.tasklist
-  # - pymdownx.superfences:
-  #     custom_fences:
-  #       - name: mermaid
-  #         class: mermaid
-  #         format: !!python/name:pymdownx.superfences.fence_code_format
-  # - pymdownx.emoji:
-  #     emoji_index: !!python/name:materialx.emoji.twemoji
-  #     emoji_generator: !!python/name:materialx.emoji.to_svg
-
-
+    # - admonition
+    # - pymdownx.tasklist
+    # - pymdownx.superfences:
+    #     custom_fences:
+    #       - name: mermaid
+    #         class: mermaid
+    #         format: !!python/name:pymdownx.superfences.fence_code_format
+    # - pymdownx.emoji:
+    #     emoji_index: !!python/name:materialx.emoji.twemoji
+    #     emoji_generator: !!python/name:materialx.emoji.to_svg
 # theme:
 #   name: material
 #   language: pt-BR
@@ -56,13 +55,6 @@ plugins:
 
 # watch:
 #    - notas_musicais
-
-# plugins:
-# - macros
-# - mkdocstrings:
-#     handlers:
-#       python:
-#         paths: [notas_musicais]
 
 # extra:
 #   commands:
