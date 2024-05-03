@@ -16,8 +16,8 @@ build:
       - poetry config virtualenvs.create false
       - poetry install --only doc
 
-    # post_install:
-    #   - poetry install --only doc
+    post_install:
+      - poetry install --only doc
 
 mkdocs:
   configuration: mkdocs.yml

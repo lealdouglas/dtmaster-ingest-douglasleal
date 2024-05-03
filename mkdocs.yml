@@ -17,6 +17,6 @@ extra_css:
 plugins:
 - search
 - mkdocstrings:
-handlers:
-  python:
-    paths: [dtmaster_ingest_douglasleal]
+    handlers:
+      python:
+        paths: [dtmaster_ingest_douglasleal]
